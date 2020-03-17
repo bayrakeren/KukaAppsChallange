@@ -47,7 +47,7 @@ class DriversViewModel: BaseViewModel {
     
     var tableViewState: TableViewState {
         if drivers?.count ?? 0 > 0 {
-            return .hasData(sections: 0, animated: false)
+            return .hasData(sections: 1, animated: true)
         } else {
             return .empty(message: "Listenelecek Kayıt Bulunamadı", view: nil)
         }

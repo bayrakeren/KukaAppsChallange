@@ -29,4 +29,22 @@ class DriverDetailViewController: BaseNavigationViewController {
         
         self.viewModel.getDriverDetail(id: id)
     }
+    
+    func animation() {
+        let animation = CASpringAnimation(keyPath: "position.x")
+        animation.damping = 10
+        animation.mass = 2
+        animation.stiffness = 20
+        animation.initialVelocity = 1.0
+        animation.duration = animation.settlingDuration
+        animation.fromValue = -view.bounds.size.width/2
+        animation.toValue = view.bounds.size.width/2 - 16
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        animation.fillMode = CAMediaTimingFillMode.backwards
+        
+        driverTeamNameLabel.layer.add(animation, forKey: nil)
+        
+        animation.beginTime = CACurrentMediaTime() + 0.3
+        driverAgeLabel.layer.add(animation, forKey: nil)
+    }
 }

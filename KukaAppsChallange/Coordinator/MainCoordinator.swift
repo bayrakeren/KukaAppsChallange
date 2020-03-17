@@ -21,7 +21,7 @@ class MainCoordinator: Coordinator {
     func start() {
         let viewController = DriversViewController()
         viewController.delegate = self
-        self.presenter.push(viewController, animated: false, completion: nil)
+        self.presenter.setViewControllers(viewcontrollers: [viewController], animated: false)
         self.viewController = viewController
     }
 }

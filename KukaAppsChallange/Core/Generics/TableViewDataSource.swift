@@ -46,7 +46,7 @@ class TableViewDataSource<CellType, ViewModel>: NSObject, UITableViewDataSource 
                 self.canLoadNext?()
                 let spinner = UIActivityIndicatorView(style: .gray)
                 spinner.startAnimating()
-                spinner.frame = CGRect(x: CGFloat(0), y: CGFloat(0), width: tableView.bounds.width, height: CGFloat(44))
+                spinner.frame = CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 44)
                 
                 tableView.tableFooterView = spinner
                 tableView.tableFooterView?.isHidden = false

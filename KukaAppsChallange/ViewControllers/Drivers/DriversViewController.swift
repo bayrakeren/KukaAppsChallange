@@ -29,6 +29,5 @@ class DriversViewController: BaseViewController {
         
         self.tableView.registerNib(witClassAndIdentifier: DriversListCell.self)
         self.tableView.dataSource = dataSource
-        self.tableView.contentInset.top = 16
     }
 }

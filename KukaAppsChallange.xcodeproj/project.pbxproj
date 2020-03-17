@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		50F63A53771F93522F8C9C7C /* Pods_KukaAppsChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6310A469095B2E37D7EE71 /* Pods_KukaAppsChallange.framework */; };
 		6FAB76D624212D59009642FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76D524212D59009642FB /* AppDelegate.swift */; };
-		6FAB76DD24212D59009642FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB76DB24212D59009642FB /* Main.storyboard */; };
 		6FAB76DF24212D5A009642FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB76DE24212D5A009642FB /* Assets.xcassets */; };
 		6FAB76E224212D5A009642FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB76E024212D5A009642FB /* LaunchScreen.storyboard */; };
-		6FAB76ED24212D5A009642FB /* KukaAppsChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76EC24212D5A009642FB /* KukaAppsChallangeTests.swift */; };
 		6FAB76F924212EBE009642FB /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76F824212EBE009642FB /* Managers.swift */; };
 		6FAB76FB24212EE2009642FB /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76FA24212EE2009642FB /* ServiceManager.swift */; };
 		6FAB76FD24212F26009642FB /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76FC24212F26009642FB /* ServiceConstants.swift */; };
@@ -55,30 +53,15 @@
 		6FAB77642421454A009642FB /* DriverDetailDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77632421454A009642FB /* DriverDetailDelegates.swift */; };
 		6FAB7766242147D0009642FB /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7765242147D0009642FB /* UIImage.swift */; };
 		6FAB776924214859009642FB /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB776824214859009642FB /* FavoriteManager.swift */; };
-		8877A37B372D45A2F2D2BC3B /* Pods_KukaAppsChallangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5034365005DF73F5234CD /* Pods_KukaAppsChallangeTests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6FAB76E924212D5A009642FB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FAB76CA24212D59009642FB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FAB76D124212D59009642FB;
-			remoteInfo = KukaAppsChallange;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C8BD08020889F53E7576936 /* Pods-KukaAppsChallange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsChallange.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange.release.xcconfig"; sourceTree = "<group>"; };
 		6FAB76D224212D59009642FB /* KukaAppsChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KukaAppsChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAB76D524212D59009642FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6FAB76DC24212D59009642FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FAB76DE24212D5A009642FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FAB76E124212D5A009642FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FAB76E324212D5A009642FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FAB76E824212D5A009642FB /* KukaAppsChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KukaAppsChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FAB76EC24212D5A009642FB /* KukaAppsChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsChallangeTests.swift; sourceTree = "<group>"; };
-		6FAB76EE24212D5A009642FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FAB76F824212EBE009642FB /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
 		6FAB76FA24212EE2009642FB /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		6FAB76FC24212F26009642FB /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
@@ -137,14 +120,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FAB76E524212D5A009642FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8877A37B372D45A2F2D2BC3B /* Pods_KukaAppsChallangeTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -161,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				6FAB76D424212D59009642FB /* KukaAppsChallange */,
-				6FAB76EB24212D5A009642FB /* KukaAppsChallangeTests */,
 				6FAB76D324212D59009642FB /* Products */,
 				D0A2A8AC0C16372E91688F11 /* Pods */,
 				571EC0091DBA48755F8D4CE1 /* Frameworks */,
@@ -172,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				6FAB76D224212D59009642FB /* KukaAppsChallange.app */,
-				6FAB76E824212D5A009642FB /* KukaAppsChallangeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				6FAB76D524212D59009642FB /* AppDelegate.swift */,
-				6FAB76DB24212D59009642FB /* Main.storyboard */,
 				6FAB76DE24212D5A009642FB /* Assets.xcassets */,
 				6FAB76E024212D5A009642FB /* LaunchScreen.storyboard */,
 				6FAB76E324212D5A009642FB /* Info.plist */,
@@ -195,15 +167,6 @@
 				6FAB774C24213AD2009642FB /* Extensions */,
 			);
 			path = KukaAppsChallange;
-			sourceTree = "<group>";
-		};
-		6FAB76EB24212D5A009642FB /* KukaAppsChallangeTests */ = {
-			isa = PBXGroup;
-			children = (
-				6FAB76EC24212D5A009642FB /* KukaAppsChallangeTests.swift */,
-				6FAB76EE24212D5A009642FB /* Info.plist */,
-			);
-			path = KukaAppsChallangeTests;
 			sourceTree = "<group>";
 		};
 		6FAB76F724212E58009642FB /* Service */ = {
@@ -465,25 +428,6 @@
 			productReference = 6FAB76D224212D59009642FB /* KukaAppsChallange.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6FAB76E724212D5A009642FB /* KukaAppsChallangeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6FAB76F424212D5A009642FB /* Build configuration list for PBXNativeTarget "KukaAppsChallangeTests" */;
-			buildPhases = (
-				9C59CABC04D5EDBE9AFA1E25 /* [CP] Check Pods Manifest.lock */,
-				6FAB76E424212D5A009642FB /* Sources */,
-				6FAB76E524212D5A009642FB /* Frameworks */,
-				6FAB76E624212D5A009642FB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6FAB76EA24212D5A009642FB /* PBXTargetDependency */,
-			);
-			name = KukaAppsChallangeTests;
-			productName = KukaAppsChallangeTests;
-			productReference = 6FAB76E824212D5A009642FB /* KukaAppsChallangeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -496,10 +440,6 @@
 				TargetAttributes = {
 					6FAB76D124212D59009642FB = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					6FAB76E724212D5A009642FB = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 6FAB76D124212D59009642FB;
 					};
 				};
 			};
@@ -517,7 +457,6 @@
 			projectRoot = "";
 			targets = (
 				6FAB76D124212D59009642FB /* KukaAppsChallange */,
-				6FAB76E724212D5A009642FB /* KukaAppsChallangeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -534,14 +473,6 @@
 				6FAB7730242135F6009642FB /* LoadingFooterView.xib in Resources */,
 				6FAB77592421403B009642FB /* DriverDetailViewController.xib in Resources */,
 				6FAB76DF24212D5A009642FB /* Assets.xcassets in Resources */,
-				6FAB76DD24212D59009642FB /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FAB76E624212D5A009642FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,28 +494,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C59CABC04D5EDBE9AFA1E25 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KukaAppsChallangeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E9E055EBF98953A3B90311D4 /* [CP] Check Pods Manifest.lock */ = {
@@ -657,33 +566,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6FAB76E424212D5A009642FB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FAB76ED24212D5A009642FB /* KukaAppsChallangeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		6FAB76EA24212D5A009642FB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6FAB76D124212D59009642FB /* KukaAppsChallange */;
-			targetProxy = 6FAB76E924212D5A009642FB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		6FAB76DB24212D59009642FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FAB76DC24212D59009642FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6FAB76E024212D5A009642FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -849,52 +734,6 @@
 			};
 			name = Release;
 		};
-		6FAB76F524212D5A009642FB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74691AB216DCCB4AAFF68883 /* Pods-KukaAppsChallangeTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H23U75M6M4;
-				INFOPLIST_FILE = KukaAppsChallangeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.erenbayrak.KukaAppsChallangeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KukaAppsChallange.app/KukaAppsChallange";
-			};
-			name = Debug;
-		};
-		6FAB76F624212D5A009642FB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD21827109414785F6368E55 /* Pods-KukaAppsChallangeTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H23U75M6M4;
-				INFOPLIST_FILE = KukaAppsChallangeTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.erenbayrak.KukaAppsChallangeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KukaAppsChallange.app/KukaAppsChallange";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -912,15 +751,6 @@
 			buildConfigurations = (
 				6FAB76F224212D5A009642FB /* Debug */,
 				6FAB76F324212D5A009642FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6FAB76F424212D5A009642FB /* Build configuration list for PBXNativeTarget "KukaAppsChallangeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FAB76F524212D5A009642FB /* Debug */,
-				6FAB76F624212D5A009642FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

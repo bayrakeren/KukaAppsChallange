@@ -12,11 +12,15 @@ extension DriverDetailViewController: BaseViewModelDelegate {
     func onLoadEnd() {
         self.indicatorView.removeFromSuperview()
         
-        let driver = viewModel.driver
+        guard let driver = viewModel.driver else {
+            self.navigationController?.popViewController(animated: false)
+            return
+        }
         
-        self.driverImageView.setImage(withPath: driver?.imagePath)
-        self.driverTeamNameLabel.text = driver?.team
-        self.driverAgeLabel.text = driver?.age
+        self.driverImageView.setImage(withPath: driver.imagePath)
+        self.driverTeamNameLabel.text = "Team: " + driver.team
+        self.driverAgeLabel.text = "Age: " + driver.age
+        self.animation()
     }
     
     func onLoadError(_ error: String?) {
