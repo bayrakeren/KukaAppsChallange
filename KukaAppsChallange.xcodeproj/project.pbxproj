@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50F63A53771F93522F8C9C7C /* Pods_KukaAppsChallange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6310A469095B2E37D7EE71 /* Pods_KukaAppsChallange.framework */; };
+		6FAB76D624212D59009642FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76D524212D59009642FB /* AppDelegate.swift */; };
+		6FAB76DD24212D59009642FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB76DB24212D59009642FB /* Main.storyboard */; };
+		6FAB76DF24212D5A009642FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB76DE24212D5A009642FB /* Assets.xcassets */; };
+		6FAB76E224212D5A009642FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB76E024212D5A009642FB /* LaunchScreen.storyboard */; };
+		6FAB76ED24212D5A009642FB /* KukaAppsChallangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76EC24212D5A009642FB /* KukaAppsChallangeTests.swift */; };
+		6FAB76F924212EBE009642FB /* Managers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76F824212EBE009642FB /* Managers.swift */; };
+		6FAB76FB24212EE2009642FB /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76FA24212EE2009642FB /* ServiceManager.swift */; };
+		6FAB76FD24212F26009642FB /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76FC24212F26009642FB /* ServiceConstants.swift */; };
+		6FAB76FF24212F97009642FB /* TargetTypeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB76FE24212F97009642FB /* TargetTypeConstants.swift */; };
+		6FAB77012421305E009642FB /* DefaultAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77002421305E009642FB /* DefaultAlamofireManager.swift */; };
+		6FAB7706242130B2009642FB /* DriversAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7705242130B2009642FB /* DriversAPI.swift */; };
+		6FAB7708242130CD009642FB /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7707242130CD009642FB /* EndPoints.swift */; };
+		6FAB770B2421318F009642FB /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB770A2421318F009642FB /* ResponseModel.swift */; };
+		6FAB770D2421323E009642FB /* DriversService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB770C2421323E009642FB /* DriversService.swift */; };
+		6FAB7710242133A0009642FB /* Showable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB770F242133A0009642FB /* Showable.swift */; };
+		6FAB7712242133B4009642FB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7711242133B4009642FB /* Router.swift */; };
+		6FAB7714242133DB009642FB /* KukaAppsChallangeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7713242133DB009642FB /* KukaAppsChallangeRouter.swift */; };
+		6FAB771724213413009642FB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB771624213413009642FB /* Coordinator.swift */; };
+		6FAB771924213424009642FB /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB771824213424009642FB /* ApplicationCoordinator.swift */; };
+		6FAB771B24213443009642FB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB771A24213443009642FB /* MainCoordinator.swift */; };
+		6FAB77202421349C009642FB /* DriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB771E2421349C009642FB /* DriversViewController.swift */; };
+		6FAB77212421349C009642FB /* DriversViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB771F2421349C009642FB /* DriversViewController.xib */; };
+		6FAB7725242134F9009642FB /* EnumDrivenTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7724242134F9009642FB /* EnumDrivenTableView.swift */; };
+		6FAB772924213538009642FB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB772824213538009642FB /* BaseView.swift */; };
+		6FAB772E242135D1009642FB /* LoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB772D242135D1009642FB /* LoadingFooterView.swift */; };
+		6FAB7730242135F6009642FB /* LoadingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB772F242135F6009642FB /* LoadingFooterView.xib */; };
+		6FAB773324213643009642FB /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB773224213643009642FB /* ErrorMessageView.swift */; };
+		6FAB77352421365E009642FB /* ErrorMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB77342421365E009642FB /* ErrorMessageView.xib */; };
+		6FAB7738242136F7009642FB /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7737242136F7009642FB /* TableViewDataSource.swift */; };
+		6FAB773A24213720009642FB /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB773924213720009642FB /* BaseTableViewCell.swift */; };
+		6FAB773C242137D0009642FB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB773B242137D0009642FB /* BaseViewController.swift */; };
+		6FAB773E242138AD009642FB /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB773D242138AD009642FB /* BaseNavigationViewController.swift */; };
+		6FAB77422421394F009642FB /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77412421394F009642FB /* BaseViewModel.swift */; };
+		6FAB774424213965009642FB /* BaseViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB774324213965009642FB /* BaseViewModelDelegate.swift */; };
+		6FAB77462421398C009642FB /* DriversViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77452421398C009642FB /* DriversViewModel.swift */; };
+		6FAB774A24213ABF009642FB /* DriversListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB774824213ABF009642FB /* DriversListCell.swift */; };
+		6FAB774B24213ABF009642FB /* DriversListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB774924213ABF009642FB /* DriversListCell.xib */; };
+		6FAB774E24213ADF009642FB /* TableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB774D24213ADF009642FB /* TableViewExtensions.swift */; };
+		6FAB775124213B49009642FB /* DriversDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB775024213B49009642FB /* DriversDelegates.swift */; };
+		6FAB77582421403B009642FB /* DriverDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77562421403B009642FB /* DriverDetailViewController.swift */; };
+		6FAB77592421403B009642FB /* DriverDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FAB77572421403B009642FB /* DriverDetailViewController.xib */; };
+		6FAB775C2421410F009642FB /* DriverDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB775B2421410F009642FB /* DriverDetailViewModel.swift */; };
+		6FAB775E2421424F009642FB /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB775D2421424F009642FB /* ImageViewExtensions.swift */; };
+		6FAB77612421445F009642FB /* DriverDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77602421445F009642FB /* DriverDetailCoordinator.swift */; };
+		6FAB77642421454A009642FB /* DriverDetailDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB77632421454A009642FB /* DriverDetailDelegates.swift */; };
+		6FAB7766242147D0009642FB /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB7765242147D0009642FB /* UIImage.swift */; };
+		6FAB776924214859009642FB /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAB776824214859009642FB /* FavoriteManager.swift */; };
+		8877A37B372D45A2F2D2BC3B /* Pods_KukaAppsChallangeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A5034365005DF73F5234CD /* Pods_KukaAppsChallangeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FAB76E924212D5A009642FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FAB76CA24212D59009642FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FAB76D124212D59009642FB;
+			remoteInfo = KukaAppsChallange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C8BD08020889F53E7576936 /* Pods-KukaAppsChallange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsChallange.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange.release.xcconfig"; sourceTree = "<group>"; };
+		6FAB76D224212D59009642FB /* KukaAppsChallange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KukaAppsChallange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FAB76D524212D59009642FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FAB76DC24212D59009642FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FAB76DE24212D5A009642FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FAB76E124212D5A009642FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FAB76E324212D5A009642FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FAB76E824212D5A009642FB /* KukaAppsChallangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KukaAppsChallangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FAB76EC24212D5A009642FB /* KukaAppsChallangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsChallangeTests.swift; sourceTree = "<group>"; };
+		6FAB76EE24212D5A009642FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FAB76F824212EBE009642FB /* Managers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managers.swift; sourceTree = "<group>"; };
+		6FAB76FA24212EE2009642FB /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		6FAB76FC24212F26009642FB /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		6FAB76FE24212F97009642FB /* TargetTypeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTypeConstants.swift; sourceTree = "<group>"; };
+		6FAB77002421305E009642FB /* DefaultAlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlamofireManager.swift; sourceTree = "<group>"; };
+		6FAB7705242130B2009642FB /* DriversAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversAPI.swift; sourceTree = "<group>"; };
+		6FAB7707242130CD009642FB /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		6FAB770A2421318F009642FB /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		6FAB770C2421323E009642FB /* DriversService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversService.swift; sourceTree = "<group>"; };
+		6FAB770F242133A0009642FB /* Showable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Showable.swift; sourceTree = "<group>"; };
+		6FAB7711242133B4009642FB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		6FAB7713242133DB009642FB /* KukaAppsChallangeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KukaAppsChallangeRouter.swift; sourceTree = "<group>"; };
+		6FAB771624213413009642FB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6FAB771824213424009642FB /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		6FAB771A24213443009642FB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6FAB771E2421349C009642FB /* DriversViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversViewController.swift; sourceTree = "<group>"; };
+		6FAB771F2421349C009642FB /* DriversViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriversViewController.xib; sourceTree = "<group>"; };
+		6FAB7724242134F9009642FB /* EnumDrivenTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumDrivenTableView.swift; sourceTree = "<group>"; };
+		6FAB772824213538009642FB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		6FAB772D242135D1009642FB /* LoadingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingFooterView.swift; sourceTree = "<group>"; };
+		6FAB772F242135F6009642FB /* LoadingFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingFooterView.xib; sourceTree = "<group>"; };
+		6FAB773224213643009642FB /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
+		6FAB77342421365E009642FB /* ErrorMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorMessageView.xib; sourceTree = "<group>"; };
+		6FAB7737242136F7009642FB /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		6FAB773924213720009642FB /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		6FAB773B242137D0009642FB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6FAB773D242138AD009642FB /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		6FAB77412421394F009642FB /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		6FAB774324213965009642FB /* BaseViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelDelegate.swift; sourceTree = "<group>"; };
+		6FAB77452421398C009642FB /* DriversViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversViewModel.swift; sourceTree = "<group>"; };
+		6FAB774824213ABF009642FB /* DriversListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversListCell.swift; sourceTree = "<group>"; };
+		6FAB774924213ABF009642FB /* DriversListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriversListCell.xib; sourceTree = "<group>"; };
+		6FAB774D24213ADF009642FB /* TableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtensions.swift; sourceTree = "<group>"; };
+		6FAB775024213B49009642FB /* DriversDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriversDelegates.swift; sourceTree = "<group>"; };
+		6FAB77562421403B009642FB /* DriverDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailViewController.swift; sourceTree = "<group>"; };
+		6FAB77572421403B009642FB /* DriverDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriverDetailViewController.xib; sourceTree = "<group>"; };
+		6FAB775B2421410F009642FB /* DriverDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailViewModel.swift; sourceTree = "<group>"; };
+		6FAB775D2421424F009642FB /* ImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtensions.swift; sourceTree = "<group>"; };
+		6FAB77602421445F009642FB /* DriverDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailCoordinator.swift; sourceTree = "<group>"; };
+		6FAB77632421454A009642FB /* DriverDetailDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverDetailDelegates.swift; sourceTree = "<group>"; };
+		6FAB7765242147D0009642FB /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		6FAB776824214859009642FB /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
+		715D64CE070FFF7EE7A1BFC0 /* Pods-KukaAppsChallange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsChallange.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange.debug.xcconfig"; sourceTree = "<group>"; };
+		74691AB216DCCB4AAFF68883 /* Pods-KukaAppsChallangeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsChallangeTests.debug.xcconfig"; path = "Target Support Files/Pods-KukaAppsChallangeTests/Pods-KukaAppsChallangeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F6310A469095B2E37D7EE71 /* Pods_KukaAppsChallange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KukaAppsChallange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A5034365005DF73F5234CD /* Pods_KukaAppsChallangeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KukaAppsChallangeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD21827109414785F6368E55 /* Pods-KukaAppsChallangeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KukaAppsChallangeTests.release.xcconfig"; path = "Target Support Files/Pods-KukaAppsChallangeTests/Pods-KukaAppsChallangeTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FAB76CF24212D59009642FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F63A53771F93522F8C9C7C /* Pods_KukaAppsChallange.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FAB76E524212D5A009642FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8877A37B372D45A2F2D2BC3B /* Pods_KukaAppsChallangeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		571EC0091DBA48755F8D4CE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F6310A469095B2E37D7EE71 /* Pods_KukaAppsChallange.framework */,
+				85A5034365005DF73F5234CD /* Pods_KukaAppsChallangeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FAB76C924212D59009642FB = {
+			isa = PBXGroup;
+			children = (
+				6FAB76D424212D59009642FB /* KukaAppsChallange */,
+				6FAB76EB24212D5A009642FB /* KukaAppsChallangeTests */,
+				6FAB76D324212D59009642FB /* Products */,
+				D0A2A8AC0C16372E91688F11 /* Pods */,
+				571EC0091DBA48755F8D4CE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FAB76D324212D59009642FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB76D224212D59009642FB /* KukaAppsChallange.app */,
+				6FAB76E824212D5A009642FB /* KukaAppsChallangeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FAB76D424212D59009642FB /* KukaAppsChallange */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB76D524212D59009642FB /* AppDelegate.swift */,
+				6FAB76DB24212D59009642FB /* Main.storyboard */,
+				6FAB76DE24212D5A009642FB /* Assets.xcassets */,
+				6FAB76E024212D5A009642FB /* LaunchScreen.storyboard */,
+				6FAB76E324212D5A009642FB /* Info.plist */,
+				6FAB771C24213479009642FB /* ViewControllers */,
+				6FAB770E24213383009642FB /* Router */,
+				6FAB771524213400009642FB /* Coordinator */,
+				6FAB77092421317D009642FB /* Models */,
+				6FAB76F724212E58009642FB /* Service */,
+				6FAB7722242134C2009642FB /* KukaAppsChallangeUI */,
+				6FAB77262421350E009642FB /* Core */,
+				6FAB774C24213AD2009642FB /* Extensions */,
+			);
+			path = KukaAppsChallange;
+			sourceTree = "<group>";
+		};
+		6FAB76EB24212D5A009642FB /* KukaAppsChallangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB76EC24212D5A009642FB /* KukaAppsChallangeTests.swift */,
+				6FAB76EE24212D5A009642FB /* Info.plist */,
+			);
+			path = KukaAppsChallangeTests;
+			sourceTree = "<group>";
+		};
+		6FAB76F724212E58009642FB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB77022421308A009642FB /* DriversService */,
+				6FAB76F824212EBE009642FB /* Managers.swift */,
+				6FAB76FC24212F26009642FB /* ServiceConstants.swift */,
+				6FAB76FA24212EE2009642FB /* ServiceManager.swift */,
+				6FAB76FE24212F97009642FB /* TargetTypeConstants.swift */,
+				6FAB77002421305E009642FB /* DefaultAlamofireManager.swift */,
+				6FAB7707242130CD009642FB /* EndPoints.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6FAB77022421308A009642FB /* DriversService */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB7705242130B2009642FB /* DriversAPI.swift */,
+				6FAB770C2421323E009642FB /* DriversService.swift */,
+			);
+			path = DriversService;
+			sourceTree = "<group>";
+		};
+		6FAB77092421317D009642FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB770A2421318F009642FB /* ResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6FAB770E24213383009642FB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB770F242133A0009642FB /* Showable.swift */,
+				6FAB7711242133B4009642FB /* Router.swift */,
+				6FAB7713242133DB009642FB /* KukaAppsChallangeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6FAB771524213400009642FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB771624213413009642FB /* Coordinator.swift */,
+				6FAB771824213424009642FB /* ApplicationCoordinator.swift */,
+				6FAB771A24213443009642FB /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6FAB771C24213479009642FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB771D24213486009642FB /* Drivers */,
+				6FAB775524214021009642FB /* DriverDetail */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6FAB771D24213486009642FB /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB774F24213B3C009642FB /* Delegates */,
+				6FAB774724213AA8009642FB /* Cell */,
+				6FAB773F24213931009642FB /* ViewModels */,
+				6FAB771E2421349C009642FB /* DriversViewController.swift */,
+				6FAB771F2421349C009642FB /* DriversViewController.xib */,
+			);
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		6FAB7722242134C2009642FB /* KukaAppsChallangeUI */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB7723242134D7009642FB /* EnumDrivenTableView */,
+			);
+			path = KukaAppsChallangeUI;
+			sourceTree = "<group>";
+		};
+		6FAB7723242134D7009642FB /* EnumDrivenTableView */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB773124213620009642FB /* ErrorMessageView */,
+				6FAB772C242135A8009642FB /* LoadingFooterView */,
+				6FAB7724242134F9009642FB /* EnumDrivenTableView.swift */,
+			);
+			path = EnumDrivenTableView;
+			sourceTree = "<group>";
+		};
+		6FAB77262421350E009642FB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB776724214844009642FB /* FavoriteManager */,
+				6FAB774024213944009642FB /* BaseViewModel */,
+				6FAB7736242136E9009642FB /* Generics */,
+				6FAB77272421352E009642FB /* View */,
+				6FAB773B242137D0009642FB /* BaseViewController.swift */,
+				6FAB773D242138AD009642FB /* BaseNavigationViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6FAB77272421352E009642FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB772824213538009642FB /* BaseView.swift */,
+				6FAB773924213720009642FB /* BaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6FAB772C242135A8009642FB /* LoadingFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB772D242135D1009642FB /* LoadingFooterView.swift */,
+				6FAB772F242135F6009642FB /* LoadingFooterView.xib */,
+			);
+			path = LoadingFooterView;
+			sourceTree = "<group>";
+		};
+		6FAB773124213620009642FB /* ErrorMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB773224213643009642FB /* ErrorMessageView.swift */,
+				6FAB77342421365E009642FB /* ErrorMessageView.xib */,
+			);
+			path = ErrorMessageView;
+			sourceTree = "<group>";
+		};
+		6FAB7736242136E9009642FB /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB7737242136F7009642FB /* TableViewDataSource.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		6FAB773F24213931009642FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB77452421398C009642FB /* DriversViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6FAB774024213944009642FB /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB77412421394F009642FB /* BaseViewModel.swift */,
+				6FAB774324213965009642FB /* BaseViewModelDelegate.swift */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		6FAB774724213AA8009642FB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB774824213ABF009642FB /* DriversListCell.swift */,
+				6FAB774924213ABF009642FB /* DriversListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6FAB774C24213AD2009642FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB774D24213ADF009642FB /* TableViewExtensions.swift */,
+				6FAB775D2421424F009642FB /* ImageViewExtensions.swift */,
+				6FAB7765242147D0009642FB /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6FAB774F24213B3C009642FB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB775024213B49009642FB /* DriversDelegates.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6FAB775524214021009642FB /* DriverDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB77622421453A009642FB /* Delegates */,
+				6FAB775F2421444C009642FB /* Coordinator */,
+				6FAB775A24214102009642FB /* ViewModels */,
+				6FAB77562421403B009642FB /* DriverDetailViewController.swift */,
+				6FAB77572421403B009642FB /* DriverDetailViewController.xib */,
+			);
+			path = DriverDetail;
+			sourceTree = "<group>";
+		};
+		6FAB775A24214102009642FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB775B2421410F009642FB /* DriverDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6FAB775F2421444C009642FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB77602421445F009642FB /* DriverDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6FAB77622421453A009642FB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB77632421454A009642FB /* DriverDetailDelegates.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		6FAB776724214844009642FB /* FavoriteManager */ = {
+			isa = PBXGroup;
+			children = (
+				6FAB776824214859009642FB /* FavoriteManager.swift */,
+			);
+			path = FavoriteManager;
+			sourceTree = "<group>";
+		};
+		D0A2A8AC0C16372E91688F11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				715D64CE070FFF7EE7A1BFC0 /* Pods-KukaAppsChallange.debug.xcconfig */,
+				0C8BD08020889F53E7576936 /* Pods-KukaAppsChallange.release.xcconfig */,
+				74691AB216DCCB4AAFF68883 /* Pods-KukaAppsChallangeTests.debug.xcconfig */,
+				BD21827109414785F6368E55 /* Pods-KukaAppsChallangeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FAB76D124212D59009642FB /* KukaAppsChallange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FAB76F124212D5A009642FB /* Build configuration list for PBXNativeTarget "KukaAppsChallange" */;
+			buildPhases = (
+				E9E055EBF98953A3B90311D4 /* [CP] Check Pods Manifest.lock */,
+				6FAB76CE24212D59009642FB /* Sources */,
+				6FAB76CF24212D59009642FB /* Frameworks */,
+				6FAB76D024212D59009642FB /* Resources */,
+				6AE9056781D39D1A680A0FF3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KukaAppsChallange;
+			productName = KukaAppsChallange;
+			productReference = 6FAB76D224212D59009642FB /* KukaAppsChallange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FAB76E724212D5A009642FB /* KukaAppsChallangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FAB76F424212D5A009642FB /* Build configuration list for PBXNativeTarget "KukaAppsChallangeTests" */;
+			buildPhases = (
+				9C59CABC04D5EDBE9AFA1E25 /* [CP] Check Pods Manifest.lock */,
+				6FAB76E424212D5A009642FB /* Sources */,
+				6FAB76E524212D5A009642FB /* Frameworks */,
+				6FAB76E624212D5A009642FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FAB76EA24212D5A009642FB /* PBXTargetDependency */,
+			);
+			name = KukaAppsChallangeTests;
+			productName = KukaAppsChallangeTests;
+			productReference = 6FAB76E824212D5A009642FB /* KukaAppsChallangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FAB76CA24212D59009642FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Eren Bayrak";
+				TargetAttributes = {
+					6FAB76D124212D59009642FB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					6FAB76E724212D5A009642FB = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 6FAB76D124212D59009642FB;
+					};
+				};
+			};
+			buildConfigurationList = 6FAB76CD24212D59009642FB /* Build configuration list for PBXProject "KukaAppsChallange" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FAB76C924212D59009642FB;
+			productRefGroup = 6FAB76D324212D59009642FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FAB76D124212D59009642FB /* KukaAppsChallange */,
+				6FAB76E724212D5A009642FB /* KukaAppsChallangeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FAB76D024212D59009642FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAB77212421349C009642FB /* DriversViewController.xib in Resources */,
+				6FAB774B24213ABF009642FB /* DriversListCell.xib in Resources */,
+				6FAB76E224212D5A009642FB /* LaunchScreen.storyboard in Resources */,
+				6FAB77352421365E009642FB /* ErrorMessageView.xib in Resources */,
+				6FAB7730242135F6009642FB /* LoadingFooterView.xib in Resources */,
+				6FAB77592421403B009642FB /* DriverDetailViewController.xib in Resources */,
+				6FAB76DF24212D5A009642FB /* Assets.xcassets in Resources */,
+				6FAB76DD24212D59009642FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FAB76E624212D5A009642FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AE9056781D39D1A680A0FF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KukaAppsChallange/Pods-KukaAppsChallange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C59CABC04D5EDBE9AFA1E25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KukaAppsChallangeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E055EBF98953A3B90311D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KukaAppsChallange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FAB76CE24212D59009642FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAB7708242130CD009642FB /* EndPoints.swift in Sources */,
+				6FAB775124213B49009642FB /* DriversDelegates.swift in Sources */,
+				6FAB76D624212D59009642FB /* AppDelegate.swift in Sources */,
+				6FAB7714242133DB009642FB /* KukaAppsChallangeRouter.swift in Sources */,
+				6FAB76F924212EBE009642FB /* Managers.swift in Sources */,
+				6FAB76FD24212F26009642FB /* ServiceConstants.swift in Sources */,
+				6FAB773C242137D0009642FB /* BaseViewController.swift in Sources */,
+				6FAB771924213424009642FB /* ApplicationCoordinator.swift in Sources */,
+				6FAB77422421394F009642FB /* BaseViewModel.swift in Sources */,
+				6FAB7712242133B4009642FB /* Router.swift in Sources */,
+				6FAB771724213413009642FB /* Coordinator.swift in Sources */,
+				6FAB7706242130B2009642FB /* DriversAPI.swift in Sources */,
+				6FAB774E24213ADF009642FB /* TableViewExtensions.swift in Sources */,
+				6FAB771B24213443009642FB /* MainCoordinator.swift in Sources */,
+				6FAB77462421398C009642FB /* DriversViewModel.swift in Sources */,
+				6FAB76FF24212F97009642FB /* TargetTypeConstants.swift in Sources */,
+				6FAB770D2421323E009642FB /* DriversService.swift in Sources */,
+				6FAB773E242138AD009642FB /* BaseNavigationViewController.swift in Sources */,
+				6FAB77582421403B009642FB /* DriverDetailViewController.swift in Sources */,
+				6FAB77642421454A009642FB /* DriverDetailDelegates.swift in Sources */,
+				6FAB7738242136F7009642FB /* TableViewDataSource.swift in Sources */,
+				6FAB7725242134F9009642FB /* EnumDrivenTableView.swift in Sources */,
+				6FAB77612421445F009642FB /* DriverDetailCoordinator.swift in Sources */,
+				6FAB7710242133A0009642FB /* Showable.swift in Sources */,
+				6FAB77202421349C009642FB /* DriversViewController.swift in Sources */,
+				6FAB77012421305E009642FB /* DefaultAlamofireManager.swift in Sources */,
+				6FAB775C2421410F009642FB /* DriverDetailViewModel.swift in Sources */,
+				6FAB772924213538009642FB /* BaseView.swift in Sources */,
+				6FAB775E2421424F009642FB /* ImageViewExtensions.swift in Sources */,
+				6FAB774A24213ABF009642FB /* DriversListCell.swift in Sources */,
+				6FAB774424213965009642FB /* BaseViewModelDelegate.swift in Sources */,
+				6FAB7766242147D0009642FB /* UIImage.swift in Sources */,
+				6FAB770B2421318F009642FB /* ResponseModel.swift in Sources */,
+				6FAB773324213643009642FB /* ErrorMessageView.swift in Sources */,
+				6FAB773A24213720009642FB /* BaseTableViewCell.swift in Sources */,
+				6FAB776924214859009642FB /* FavoriteManager.swift in Sources */,
+				6FAB772E242135D1009642FB /* LoadingFooterView.swift in Sources */,
+				6FAB76FB24212EE2009642FB /* ServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FAB76E424212D5A009642FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAB76ED24212D5A009642FB /* KukaAppsChallangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FAB76EA24212D5A009642FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FAB76D124212D59009642FB /* KukaAppsChallange */;
+			targetProxy = 6FAB76E924212D5A009642FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FAB76DB24212D59009642FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FAB76DC24212D59009642FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FAB76E024212D5A009642FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FAB76E124212D5A009642FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FAB76EF24212D5A009642FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FAB76F024212D5A009642FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FAB76F224212D5A009642FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715D64CE070FFF7EE7A1BFC0 /* Pods-KukaAppsChallange.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H23U75M6M4;
+				INFOPLIST_FILE = KukaAppsChallange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erenbayrak.KukaAppsChallange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FAB76F324212D5A009642FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8BD08020889F53E7576936 /* Pods-KukaAppsChallange.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H23U75M6M4;
+				INFOPLIST_FILE = KukaAppsChallange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erenbayrak.KukaAppsChallange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FAB76F524212D5A009642FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74691AB216DCCB4AAFF68883 /* Pods-KukaAppsChallangeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H23U75M6M4;
+				INFOPLIST_FILE = KukaAppsChallangeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erenbayrak.KukaAppsChallangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KukaAppsChallange.app/KukaAppsChallange";
+			};
+			name = Debug;
+		};
+		6FAB76F624212D5A009642FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD21827109414785F6368E55 /* Pods-KukaAppsChallangeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H23U75M6M4;
+				INFOPLIST_FILE = KukaAppsChallangeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.erenbayrak.KukaAppsChallangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KukaAppsChallange.app/KukaAppsChallange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FAB76CD24212D59009642FB /* Build configuration list for PBXProject "KukaAppsChallange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FAB76EF24212D5A009642FB /* Debug */,
+				6FAB76F024212D5A009642FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FAB76F124212D5A009642FB /* Build configuration list for PBXNativeTarget "KukaAppsChallange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FAB76F224212D5A009642FB /* Debug */,
+				6FAB76F324212D5A009642FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FAB76F424212D5A009642FB /* Build configuration list for PBXNativeTarget "KukaAppsChallangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FAB76F524212D5A009642FB /* Debug */,
+				6FAB76F624212D5A009642FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FAB76CA24212D59009642FB /* Project object */;
+}
